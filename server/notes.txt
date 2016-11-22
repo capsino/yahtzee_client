@@ -1,8 +1,0 @@
-https://blog.giantswarm.io/getting-started-with-java-development-on-docker/
-http://stackoverflow.com/questions/6178583/maven-does-not-find-junit-tests-to-run
-http://stackoverflow.com/questions/71069/can-maven-be-made-less-verbose
-https://hub.docker.com/r/_/maven/
-http://blog.takipi.com/running-java-on-docker-youre-breaking-the-law/
-http://mvnrepository.com/open-source
-https://github.com/perwendel/spark
-
