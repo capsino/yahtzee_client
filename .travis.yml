@@ -16,6 +16,7 @@ script:
     - ./build.sh
     - ./up.sh
     - sleep 3 # crude way to wait till container is up
+    - docker ps -a
     - ./run.sh
 
 after_success:
