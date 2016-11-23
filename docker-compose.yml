@@ -2,9 +2,9 @@
 version: '2'
 
 services:
-  spark_client:
-    image: jj/spark_client
-    container_name: spark_client
+  yahtzee_client:
+    image: shaunhanson/yahtzee_client
+    container_name: yahtzee_client
     ports: [ "80:80" ]
     build:
       context: .
