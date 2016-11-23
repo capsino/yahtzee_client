@@ -3,7 +3,7 @@ version: '2'
 
 services:
   yahtzee_client:
-    image: shaunhanson/capsino/yahtzee_client
+    image: shaunhanson/yahtzee_client
     container_name: yahtzee_client
     ports: [ "80:80" ]
     build:
