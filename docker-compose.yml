@@ -2,7 +2,7 @@
 version: '2'
 
 services:
-  spark_client:
+  yahtzee_client:
     image: shaunhanson/capsino
     container_name: yahtzee_client
     ports: [ "80:80" ]
