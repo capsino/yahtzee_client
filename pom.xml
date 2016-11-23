@@ -55,7 +55,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>sparkexample.Service</mainClass>
+              <mainClass>capsino.client.CapsinoClient</mainClass>
               <classpathPrefix>dependency-jars/</classpathPrefix>
             </manifest>
           </archive>

@@ -12,8 +12,7 @@ public class CapsinoClient {
         	DiceRoller diceRoller = new ServerDiceRoller();
         	DiceRollService service = new DiceRollService(diceRoller);
 
-        	//return service.getRoll();
-        	return "{\"roll\":1}";
+        	return service.getRoll();
         });
 
 	}
