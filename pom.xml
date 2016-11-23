@@ -86,7 +86,7 @@
               </descriptorRefs>
               <archive>
                 <manifest>
-                  <mainClass>sparkexample.Service</mainClass>
+                  <mainClass>capsino.client.CapsinoClient</mainClass>
                 </manifest>
               </archive>
             </configuration>
