@@ -18,21 +18,21 @@ public class DiceRollServiceTests {
 	}
 
 	@Test
-	public void returns_correct_json_for_1() {
+	public void returns_correct_json_for_all_1() {
 
 		String actual = service.getRoll();
-		String expected = "{\"roll\":1}";
+		String expected = "{\"roll\":[1,1,1,1,1]}";
 
 		assertThat(actual, is(equalToIgnoringWhiteSpace(expected)));
 
 	}
 
 	@Test
-	public void returns_correct_json_for_6() {
+	public void returns_correct_json_for_1_to_5() {
 
-		diceRoller.roll = 6;
+		diceRoller.roll = new int[]{ 1, 2, 3, 4, 5 };
 		String actual = service.getRoll();
-		String expected = "{\"roll\":6}";
+		String expected = "{\"roll\":[1,2,3,4,5]}";
 
 		assertThat(actual, is(equalToIgnoringWhiteSpace(expected)));
 
@@ -40,7 +40,7 @@ public class DiceRollServiceTests {
 
 	public static class TestDiceRoller implements DiceRoller {
 
-		public int roll = 1;
+		public int[] roll = { 1, 1, 1, 1, 1 };
 
 		@Override
 		public DiceRoll rollDice() {

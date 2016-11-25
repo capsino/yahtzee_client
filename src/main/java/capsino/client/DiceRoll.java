@@ -4,7 +4,7 @@ public class DiceRoll {
 
 	private int[] roll = new int[5];
 
-	public int getRoll() {
+	public int[] getRoll() {
 		return roll;
 	}
 

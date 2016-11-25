@@ -11,7 +11,7 @@ public class ServerDiceRollerTests {
 	@Test
 	public void status_code_200_returns_correct_value() {
 
-		YahtzeeResponse response = new YahtzeeResponse(200, "{\"roll\":2}");
+		YahtzeeResponse response = new YahtzeeResponse(200, "{\"roll\":[2,2,2,2,2]}");
 		ServerDiceRoller diceRoller = new ServerDiceRoller();
 		diceRoller.setResponse(response);
 
@@ -19,7 +19,7 @@ public class ServerDiceRollerTests {
 		DiceRoll actual = diceRoller.rollDice();
 
 		DiceRoll expected = new DiceRoll();
-		expected.setRoll(2);
+		expected.setRoll(new int[]{2,2,2,2,2});
 
 		assertNotNull(actual);
 		assertEquals(expected.getRoll(), actual.getRoll());
